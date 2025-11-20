@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O.B. Montessori Digital Platform</title>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: #e0e0e0;
+      padding-top: 70px; 
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #1f1f1f;
+      color: #ffffff;
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+      z-index: 1000;
+      transition: background 0.3s, padding 0.3s;
+    }
+
+    .logo {
+      font-size: 1.9rem;
+      font-weight: bold;
+      color: #0d47a1;
+      letter-spacing: 0.5px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s, transform 0.2s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+      transform: scale(1.05);
+    }
+
+    .hero {
+      background: linear-gradient(to right, #1a237e, #0d47a1);
+      color: #ffffff;
+      text-align: center;
+      padding: 4rem 2rem 3rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+
+    .cta-button {
+      background: linear-gradient(90deg, #ffcc00, #ffd633);
+      color: #1f1f1f;
+      padding: 0.9rem 1.8rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(255, 204, 0, 0.4);
+    }
+
+    .campus-highlight {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .campus-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      margin-bottom: 2rem;
+    }
+
+    .campus-text h2 {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+
+    .campus-text h2 span {
+      font-weight: 700;
+    }
+
+    footer {
+      background: #0d0d0d;
+      color: #cccccc;
+      text-align: center;
+      padding: 2rem 20px;
+      font-size: 0.95rem;
+      border-top: 2px solid #222;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 0.5rem;
+      }
+
+      .hero h1 { font-size: 2.2rem; }
+      body { padding-top: 90px; }
+      .hero { padding-top: 3rem; padding-bottom: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">O.B. Montessori</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#admissions">Admissions</a></li>
+        <li><a href="#academics">Academics</a></li>
+        <li><a href="#campuses">Campuses</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Educating Future Leaders</h1>
+    <p>Empowering students through the <strong>Montessori method</strong> and <strong>digital innovation</strong></p>
+    <a href="#programs" class="cta-button">Explore Programs</a>
+  </section>
+
+  <section class="campus-highlight">
+    <img 
+      src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/0e05ffa9-25d2-4761-b1dd-73c606642ed7/Drone10+copy.jpg"
+      alt="O.B. Montessori Campus"
+      class="campus-image" />
+    <div class="campus-text">
+      <h2>Educating for Life, <span>Leading with Purpose</span></h2>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 O.B. Montessori Center. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
